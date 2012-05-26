@@ -19,7 +19,7 @@ $(function() {
 	var buffer = 100;
 	
 	// this figures the top of the navigation bar
-	var navTop = $('#unfixed').offset().top ;
+	var navTop = $('#unfixed').position().top ;
 	
 
 	$(document).scroll(function() {
@@ -41,7 +41,7 @@ $(function() {
 
 		// This is what changes the navigation back and forth between fixed and unfixed. It automatically figures the height of the navigation.
 		
-	  if ($(document).scrollTop() >= navTop - 45 ) {
+	  if ($(document).scrollTop() >= navTop - 10 ) {
 		$('#unfixed').addClass('fix');
 	    }
 	    else {
