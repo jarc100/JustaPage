@@ -81,16 +81,8 @@ img#logo {
 #intro {
 	background: url(http://dl.dropbox.com/u/12501614/JustaPage/images/bg.png);
 	display: block;
-	position: relative;
-	height: 508px;
-}
-
-#intro:after {
-	content: "";
-	display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
+	position relative;
+	height:508px;
 }
 
 #introcopy {
@@ -113,6 +105,7 @@ p.intro {
 	width: 100%;
 	height: 80px;
 	margin-top: 35px;
+	overflow: hidden;
 	z-index: 99;
 }
 

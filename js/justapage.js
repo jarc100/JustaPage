@@ -41,7 +41,7 @@ $(function() {
 
 		// This is what changes the navigation back and forth between fixed and unfixed. It automatically figures the height of the navigation.
 		
-	  if ($(document).scrollTop() >= navTop ) {
+	  if ($(document).scrollTop() >= navTop - 45 ) {
 		$('#unfixed').addClass('fix');
 	    }
 	    else {
