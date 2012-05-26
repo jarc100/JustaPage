@@ -19,7 +19,7 @@ $(function() {
 	var buffer = 100;
 	
 	// this figures the top of the navigation bar
-	var navTop = $('#unfixed').position().top ;
+	var navTop = $('#unfixed').offset().top ;
 	
 
 	$(document).scroll(function() {
