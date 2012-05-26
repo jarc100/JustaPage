@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>JustaPage</title>
+		<meta name="robots" content="all" />
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300|Lato:900' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="main.css" type="text/css" />
+        <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+		<link media="only screen and (max-device-width: 480px) and (min-device-width: 320px)" href="mobile.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="1pageapp.js"></script>
+        <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<script>
+	        $(document).ready(function() {
+				$('.fancybox').fancybox({
+					prevEffect	: 'fade',
+					nextEffect	: 'fade',
+				});
+	        });
+	    </script>
+	</head>
+
+	<body>
+		<div id="intro">
+			<a href="one" class="nav"><img src="http://dl.dropbox.com/u/12501614/JustaPage/images/logo.png" id="logo" alt="JustaPage" /></a>
+			<div id="introcopy">
+				<h1>JustaPage is an <a href="http://www.gnu.org/licenses/gpl.html">Open Source</a> template for creating a slick single page website.</h1>
+				<p class="intro">We've all had someone ask for a website with just 4 pages to show off some barebones business or hobby. They ask for a Home Page, an "About Me" page, a photo gallery and a contact info page. They have less than 500 words and a handful of pictures, but for some reason they think they need you to build the site on a major CMS and they've already bought the 100GB server plan on some crummy web host.
+					What's the answer? "Just shove it on a single page and call it a day."
+					JustaPage is a template for those sites. There's an About Me section, photo gallery and contact area (which is used for warnings in this demo). It's even got some nifty navigation. This whole thing is mobile-friendly and ready to rock. Who knows, you might not even mess with anything outside of the tags.</p>
+				<a href="https://twitter.com/PaulMolluzzo" class="twitter-follow-button" data-show-count="false" data-size="large" id="twitter">Follow @PaulMolluzzo</a>
+			</div>
+			<div id="unfixed" class="">
+				<ul id="nav">
+					<li class="nav"><a href="one" class="nav" id="nav1">Features</a></li>
+					<li class="nav"><a href="two" class="nav" id="nav2">About</a></li>
+					<li class="nav"><a href="three" class="nav" id="nav3">Warnings!</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="section" id="one">
+			<h1 class="section_title">Features:</h1>
+			<div class="gallery">
+				<div class="gallery_item">
+					<a href="http://i.imgur.com/Hjatu.png" class="fancybox" rel="gallery" title="test1"><img src="http://i.imgur.com/Hjatu.png" class="gallery" alt="Image1" /></a>
+					<p class="item_title">Semantic HTML/CSS</p>
+					<p>The code is written as expected and should work. It uses Eric Meyer's CSS Reset because he's smarter than me.</p>
+				</div>
+				<div class="gallery_item">
+					<a href="http://i.imgur.com/enzrh.png" class="fancybox" rel="gallery" title="test2"><img src="http://i.imgur.com/enzrh.png" class="gallery" alt="Image2" /></a>
+					<p class="item_title">Comments and Instructions</p>
+					<p>No one likes figuring what the last guy was thinking. Read the comments and take out the guess work.</p>
+				</div>
+				<div class="gallery_item">
+					<a href="http://i.imgur.com/NWIcM.png" class="fancybox" rel="gallery" title="test3"><img src="http://i.imgur.com/NWIcM.png" class="gallery" alt="Image3" /></a>
+					<p class="item_title">Nifty JS Navigation</p>
+					<p>If there's no navigation your uncle will be mad. The navigation scrolls the page and looks kinda cool.</p>
+				</div>
+				<div class="gallery_item">
+					<a href="http://i.imgur.com/ZkDwX.png" class="fancybox" rel="gallery" title="test4"><img src="http://i.imgur.com/ZkDwX.png" class="gallery" alt="Image4" /></a>
+					<p class="item_title">Fancybox Photo Gallery</p>
+					<p>We all love Fancybox, right? Boom. It's in there.</p>
+				</div>
+				<div class="gallery_item">
+					<a href="http://i.imgur.com/IC81v.png" class="fancybox" rel="gallery" title="test5"><img src="http://i.imgur.com/IC81v.png" class="gallery" alt="Image5" /></a>
+					<p class="item_title">Mobile-friendly Version</p>
+					<p>Because you want the site to look nice on smartphones.</p>
+				</div>
+				<div class="gallery_item">
+					<a href="http://i.imgur.com/ddVcz.png" class="fancybox" rel="gallery" title="test6"><img src="http://i.imgur.com/ddVcz.png" class="gallery" alt="Image6" /></a>
+					<p class="item_title">Support</p>
+					<p>Need help? Have money? <a href="mailto:paul@molluzzo.com">Email me.</a></p>
+				</div>
+			</div>
+		</div> <!-- .section#one -->
+		
+		<div class="section" id="two">
+				<h1 class="section_title">Using JustaPage:</h1>
+				<div id="floater_wrapper">
+					<div id="about">
+						<p>JustaPage is built for people who know a enough about code to change the content inside a p-tag, switch out an href, change the color of the background and break everything else. You shouldn't have to mess with the javascript, and the supporting files are all included. First step is to <a href="">download the code from GitHub.</a> <br />	<br />
+						There a few things that you might want to adjust in the code. </p>
+					</div>
+					<div id="aside_box">			
+						<h2 class="aside">A word on mobile</h2>
+						<p class="aside">This site does not use responsive web design. <em>Please stop changing the window size.</em> There is a mobile version of the site for devices with a width between 320px - 480px. That covers most smartphones. If you want to have a site for Blackberry or the 8 people on the Playbook, you'll need to make adjustments on your own.</p>
+					</div>
+				</div>						
+			<p>The height of the intro needs to be a fixed number, not auto. If you change it to auto, the page will jump when you scroll past the bottom of the intro.</p>	
+			<blockquote>
+				<pre>
+#intro {
+background: url(...);
+display: block;
+position relative;
+height:510px;
+}</pre>	
+			</blockquote>
+				<p>In the file 1pageapp.js, this line of code determines how far above a section the navigation will highlight the section.</p>
+			<blockquote>
+				<pre>
+var buffer = 220;</pre>	
+			</blockquote>
+		</div><!-- .section#two -->	
+						
+		<div class="section" id="three">
+			<h1 class="section_title">Warnings!</h1>
+			<p>There are a few caveats to using JustaPage, so here they are:</p>
+			<ul class="warnings">
+				<li class="warnings">JustaPage has not been tested on every browser. It has been tested in Safari, Firefox, Opera, and Chrome and been fully functional. In IE6, 7, 8 and 9 it breaks.</li>
+				<li class="warnings">The site has three sections, and unless you want to update the javascript yourself you should not add any more sections.</li>
+				<li class="warnings">The mobile version is a separate CSS file that basically rearranges the content in a single centered column. You should consider adding some conditional loading for large content (like photos). You might also want to consider addressing Retina versions of images.</li>
+				<li class="warnings">If you use Fancybox, you have to abide by their rules. Please go read those rules. <a href="http://fancybox.net/">Here's the Fancybox site.</a></li>
+			</ul>
+		</div>	<!-- .section#three -->
+		<div class="footer">
+			<ul class="toes">
+				<li class="toes"><a href="http://paul.molluzzo.com">by paul molluzzo</a></li>
+				<li class="toes"><a href="">Download Here</a></li>										
+			</ul>
+		</div>
+	</body>
+</html>
