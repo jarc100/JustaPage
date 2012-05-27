@@ -49,13 +49,6 @@ $(function() {
 	    }
   	});
 
-	// This is for clicking the logo
-
-	$("a[href='#top']").click(function() {
-	  $("html, body").animate({ scrollTop: 0 }, 600, 'swing');
-	  return false;
-	});
-
 	// This part will animate a scroll to the section chosen in the naviation.
 
 	$('.nav').click(function() {
