@@ -49,13 +49,21 @@ $(function() {
 	    }
   	});
 
+	// This is for clicking the logo
+
+	$("a[href='#top']").click(function() {
+	  $("html, body").animate({ scrollTop: 0 }, 600, 'swing');
+	  return false;
+	});
+
 	// This part will animate a scroll to the section chosen in the naviation.
 
 	$('.nav').click(function() {
 		var block = $(this).attr('href').replace(/#/, ''),
-			blockRoof = $('#' + block).position().top - 50
-    	$('html, body').animate({scrollTop : blockRoof}, 600, 'swing');
-	    return false;
+			blockRoof = $('#' + block).position().top - 50;
+			
+		$('html, body').animate({scrollTop : blockRoof }, 600, 'swing');
+    	return false;
   	});
 
 });
