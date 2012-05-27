@@ -67,6 +67,10 @@ pre {
 	text-align: left;
 }
 
+#ribbon {
+	display: none;
+}
+
 /*Just for the logo*/
 /*In mobile, it's not fixed and it's centered.*/
 
@@ -117,7 +121,7 @@ p.intro {
 .fix {
 	background: url(http://dl.dropbox.com/u/12501614/JustaPage/images/bg.png) !important;
 	position: fixed !important;
-	/*height: 40px !important;*/
+	height: 40px !important;
 	margin-top: 0 !important;
 	top: 0px;
 	-moz-box-shadow: 0 3px 4px #555;
@@ -129,7 +133,7 @@ ul#nav {
 	display: block;
 	white-space: nowrap;
 	margin: 0 auto 0 auto;
-	width: 300px;
+	width: auto;
 }
 
 li.nav {
