@@ -72,4 +72,3 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 <small>
 Copyright (c) 2012 Paul Molluzzo
 </small>
->>>>>>> master
