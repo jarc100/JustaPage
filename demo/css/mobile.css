@@ -87,7 +87,7 @@ img#logo {
 /*In mobile this is centered at full width*/
 
 #intro {
-	background: url(http://dl.dropbox.com/u/12501614/JustaPage/demo/images/bg.png);
+	background: url(../images/bg.png);
 	display: block;
 	position: relative;
 	height:auto;
@@ -119,7 +119,7 @@ p.intro {
 }
 
 .fix {
-	background: url(http://dl.dropbox.com/u/12501614/JustaPage/demo/images/bg.png) !important;
+	background: url(../images/bg.png) !important;
 	position: fixed !important;
 	height: 40px !important;
 	margin-top: 0 !important;
