@@ -19,7 +19,7 @@ This is a template. Dump your code in between the section you want it to appear.
 ```html
 <div class="section" id="one"> <!-- begin section one -->
 
-	<>div class="newstuff">
+	<div class="newstuff">
 
 </div> <!-- end .section#one -->
 ```
