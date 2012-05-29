@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-readme
-=======
 #JustaPage
 
 JustaPage is a one page website template that uses HTML, CSS and jQuery 1.7.2. The HTML template has four main areas for adding content: An "Intro," and three sections that can be scrolled to using the navigation. The navigation uses jQuery to animate scrolling to the appropriate section, and also highlights the navigation item when the appropriate section is in view.
