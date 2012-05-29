@@ -1,0 +1,143 @@
+/*	This file is part of JustaPage.
+
+    JustaPage is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    JustaPage is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Foobar.  If not, see <http://www.gnu.org/licenses/>.*/
+
+@import url(reset.css);
+
+/*Global styles for fonts and backgrounds. Change them.*/
+
+body {}
+
+h1 {
+	font-size: 200%;
+}
+
+h2 {
+	font-size: 175%;
+}
+
+h3 {
+	font-size: 150%;
+}
+
+p {
+	font-size: 125%;
+}
+
+a {
+	text-decoration: underline;
+	color: #000;
+}
+
+/*Just for the logo*/
+/*In mobile, it's not fixed and it's centered.*/
+
+img#logo {
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	z-index: 1000;
+}
+
+
+/*The intro section, which is above the navigation*/
+/*In mobile this is centered at full width*/
+
+#intro {
+	display: block;
+	position: relative;
+	height:auto;
+}
+
+#introcopy {
+	display: block;
+	width: 95%;
+	height:auto;
+	margin: 0 auto 0 auto;
+	padding: 5px 0 5px 7px;
+}
+
+
+/*This is for the navigation.*/
+
+#unfixed {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	z-index: 99;
+}
+
+.fix {
+	position: fixed !important;
+	/*height: 40px !important;*/
+	margin-top: 0 !important;
+	top: 0px;
+	-moz-box-shadow: 0 3px 4px #555;
+	-webkit-box-shadow: 0 3px 4px #555;
+	box-shadow: 0 3px 4px #555;
+}
+
+ul#nav {
+	display: block;
+	white-space: nowrap;
+	margin: 0 auto 0 auto;
+	width: 270px;
+}
+
+li.nav {
+	font-size: 150%;
+	color: #000;
+	display: inline;
+	list-style-type: none;
+	width: 100px;
+}
+
+li.active {
+	background-color: rgba(0, 0, 0, .2);
+}
+
+/*These are global settings for the three sections of the site.*/
+/*In mobile this is centered at full width*/
+
+.section {
+	width: auto;
+	height: auto;
+	margin: 40px auto 40px auto;
+}
+
+/*These are the settings for the footer*/
+
+#footer {
+	display: block;
+	width: 100%;
+	height: 50px;
+}
+
+ul#toes {
+	display: block;
+	white-space: nowrap;
+	margin: 5px auto 0 auto;
+	width: 200px;
+}
+
+li.toes {
+	font-size: 150%;
+	display: inline;
+	list-style-type: none;
+	width: 100px;
+}

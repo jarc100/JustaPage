@@ -1,0 +1,286 @@
+/*	This file is part of JustaPage.
+
+    JustaPage is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    JustaPage is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Foobar.  If not, see <http://www.gnu.org/licenses/>.*/
+
+
+@import url(reset.css);
+
+/*Global styles for fonts and backgrounds*/
+
+body {
+	background-color: #002;
+}
+
+/*In mobile, the fonts were reduced in size.*/
+
+h1 {
+	font-family: 'Open Sans Condensed',sans-serif;
+	font-size: 175%;
+	color: #fff;
+}
+
+h2 {
+	font-family: 'Open Sans Condensed',sans-serif;
+	font-size: 150%;
+	color: #fff;
+}
+
+p {
+	font-family: 'Open Sans Condensed',sans-serif;
+	font-size: 125%;
+	color: #fff;
+}
+
+a {
+	text-decoration: underline;
+	color: #e74d15;
+}
+
+/*The blockquote and pre are for the code samples. Toss them if you don't need them.*/
+
+blockquote {
+	display: block;
+	font-family: Georgia, Times New Roman, Times, serif;
+	font-weight: bold;
+	font-size: 100%;
+	margin: 30px auto 30px auto;
+	text-align: left;
+	width: 95%;
+	background: #0ff;
+	border: solid 4px #ff0;
+}
+
+pre {
+	display: block;
+	width: 100%;
+	text-align: left;
+}
+
+#ribbon {
+	display: none;
+}
+
+/*Just for the logo*/
+/*In mobile, it's not fixed and it's centered.*/
+
+img#logo {
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	z-index: 1000;
+}
+
+/*The intro section, which is above the navigation*/
+/*In mobile this is centered at full width*/
+
+#intro {
+	background: url(../images/bg.png);
+	display: block;
+	position: relative;
+	height:auto;
+}
+
+#introcopy {
+	display: block;
+	width: 95%;
+	height:auto;
+	margin: 0 auto 0 auto;
+	padding: 5px 0 5px 7px;
+}
+
+p.intro {
+	margin-bottom: 20px;
+}
+
+/*This is for the navigation.*/
+/*In mobile this is centered at full width*/
+
+#unfixed {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-top: 5px;
+	overflow: hidden;
+	z-index: 99;
+}
+
+.fix {
+	background: url(../images/bg.png) !important;
+	position: fixed !important;
+	height: 40px !important;
+	margin-top: 0 !important;
+	top: 0px;
+	-moz-box-shadow: 0 3px 4px #555;
+	-webkit-box-shadow: 0 3px 4px #555;
+	box-shadow: 0 3px 4px #ff0;
+}
+
+ul#nav {
+	display: block;
+	white-space: nowrap;
+	margin: 0 auto 0 auto;
+	width: 300px;
+}
+
+li.nav {
+	font-family: 'Lato', sans-serif;
+	font-size: 150%;
+	color: #e74d15;
+	display: inline;
+	list-style-type: none;
+	width: 100px;
+	margin-left: 5px;
+}
+
+li.active {
+	background-color: rgba(265, 265, 0, .7);
+}
+
+/*These are global settings for the three sections of the site.*/
+/*In mobile this is centered at full width*/
+
+.section {
+	width: 100%;
+	margin: 20px auto 20px auto;
+	height: auto;
+}
+
+h1.section_title {
+	font-family: 'Open Sans Condensed',sans-serif;
+	font-size: 200%;
+	color: #0f0;
+	margin: 10px 0 10px 5px;
+}
+
+/*These are the settings for the image gallery. */
+/*In mobile this is centered at full width*/
+
+
+.gallery {
+	display: block;
+	width: auto;
+}
+
+.gallery_item {
+	display: block;
+	float: none !important;
+	width: 80%;
+	margin: 10px auto 45px auto;
+}
+
+img.gallery {
+	display: block;	
+	border-style:solid;
+	border-width:2px;
+	border-color: #ff0;
+	width: 100%;
+	margin: 0 auto 20px auto;
+}
+
+p.item_title {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+/*These are settings for the first section, called "about"*/
+/*In mobile this is centered at full width*/
+
+#floater_wrapper {
+	display: block;
+	height: auto;
+	margin: 0 auto 10px auto;
+	width: 95%;
+}
+
+#about {
+	display: inline-block;
+	margin: 10px auto 0 auto;
+	width: auto;
+}
+
+#aside_box {
+	display: inline-block;
+	margin: 10px auto 0 auto ;
+	width: 100%;
+	background-color: #ff0;
+
+}
+
+h2.aside {
+	color: #e74d15;
+	border-style:solid;
+	border-width:5px;
+	border-color: #e74d15;
+	padding: 1px 5px 1px 5px;
+}
+
+p.aside {
+	color: #e74d15;
+	border-style:solid;
+	border-width:5px;
+	border-color: #e74d15;
+	padding: 1px 5px 1px 5px;
+}
+
+/*These are settings for the "warnings" section. AKA the thrid section.*/
+/*In mobile this is centered at full width*/
+
+ul.warnings {
+	display: inline-block;
+	margin: 15px auto 0 auto;
+	width: 90%;
+}
+
+li.warnings {
+	margin-left: 10px;
+	padding:5px 0 10px 10px;
+	font-family: 'Open Sans Condensed',sans-serif;
+	font-size: 150%;
+	color: #fff;
+	text-indent: -0.5em;
+}
+
+li.warnings:before {
+	content: "!";
+	color: #e74d15;
+	font-size: 200%;
+	font-weight: bold;
+}
+
+/*These are the settings for the footer*/
+
+#footer {
+	display: block;
+	width: 100%;
+	height: 50px;
+}
+
+ul#toes {
+	display: block;
+	white-space: nowrap;
+	margin: 5px auto 0 auto;
+	width: 300px;
+}
+
+li.toes {
+	font-family: 'Open Sans Condensed',sans-serif;
+	font-size: 150%;
+	color: #e74d15;
+	display: inline;
+	list-style-type: none;
+	width: 150px;
+}

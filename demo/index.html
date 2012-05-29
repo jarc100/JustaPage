@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>JustaPage</title>
+		<meta name="robots" content="all" />
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300|Lato:900' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/main.css" type="text/css" />
+		<link media="only screen and (max-device-width: 480px) and (min-device-width: 320px)" href="css/mobile.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/justapage.js"></script>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</head>
+
+	<body>
+		<div id="ribbon"><a href="https://github.com/paulmolluzzo/JustaPage" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a></div>
+		<div id="intro">
+			<a href="intro" class="nav"><img src="images/logo.png" id="logo" alt="JustaPage" /></a>
+			<div id="introcopy">
+				<h1>JustaPage is an <a href="http://www.gnu.org/licenses/gpl.html">Open Source</a> HTML template for creating single page websites.</h1>
+				<p class="intro">Every so often we just need to bang out a quickie one page site. It's a client who doesn't have a large amount of content, or an uncle who wants a site for his Mahjong team. JustaPage is what you can use to turn around the project in a couple of hours.<br /> <br />
+					JustaPage has an "intro" area above the navigation and three sections that can be reached through the jQuery navigation. The template is mobile-friendly and mostly cross-browser compatible, and you get everything you need in the download. Shove your usual image gallery or some text or some social media links inside the appropriate sections and you're ready to rock. <a href="https://github.com/paulmolluzzo/JustaPage/zipball/master">Get started now!</a></p>
+					<a href="https://twitter.com/PaulMolluzzo" class="twitter-follow-button" data-show-count="false" data-size="large" id="twitter">Follow @PaulMolluzzo</a>
+			</div>
+				<div id="unfixed" class="">
+					<ul id="nav">
+						<li class="nav"><a href="one" class="nav" id="nav1">Features</a></li>
+						<li class="nav"><a href="two" class="nav" id="nav2">About</a></li>
+						<li class="nav"><a href="three" class="nav" id="nav3">Warnings!</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="section" id="one">
+			<h1 class="section_title">Features:</h1>
+			<div class="gallery">
+				<div class="gallery_item">
+					<img src="images/code.png" class="gallery" alt="Image1" />
+					<p class="item_title">Semantic HTML/CSS Template</p>
+					<p>The code is written as expected and commented out. It uses Eric Meyer's CSS Reset because he's smarter than me.</p>
+				</div>
+				<div class="gallery_item">
+					<img src="images/nav.png" class="gallery" alt="Image3" />
+					<p class="item_title">Nifty JS Navigation</p>
+					<p>If there's no nav your uncle will be mad. The navigation scrolls the page and looks kinda cool. jQuery 1.7.2 is included.</p>
+				</div>
+				<div class="gallery_item">
+					<img src="images/mobile.png" class="gallery" alt="Image5" />
+					<p class="item_title">Mobile-friendly Version</p>
+					<p>Because you want the site to look nice on smartphones. Media query in the &#60;head&#62; pulls in a seperate CSS file for devices between 320px&#8211;480px.</p>
+				</div>
+			</div>
+		</div> <!-- end .section#one -->
+		
+		<div class="section" id="two">
+				<h1 class="section_title">Using JustaPage:</h1>
+				<div id="floater_wrapper">
+					<div id="about">
+						<p>JustaPage is built for people who know a enough about code to change the content inside a p-tag, switch out an href, change the color of the background and break everything else. You shouldn't have to mess with the javascript, and the supporting files are all included. First step is to <a href="https://github.com/paulmolluzzo/JustaPage/zipball/master">download the code from GitHub.</a> <br />	<br />
+						There a few things that you might want to adjust in the code. </p>
+					</div>
+					<div id="aside_box">			
+						<h2 class="aside">A word on mobile</h2>
+						<p class="aside">This site does not use responsive web design. <em>Please stop changing the window size.</em> There is a mobile version of the site for devices with a width between 320px - 480px. That covers most smartphones. If you want to have a site for Blackberry or the 8 people on the Playbook, you'll need to make adjustments on your own.</p>
+					</div>
+				</div>
+			<h1 class="section_title">Things to Add &amp; Code to look for:</h1>
+			<p>This is a template. Dump your code in between the section you want it to appear. There are comments so you don't get lost in the code.</p>	
+			<blockquote>
+				<pre>
+&lt;div class="section" id="one"> &lt;!-- begin section one -->
+
+	&lt;div class="newstuff">
+
+&lt;/div> &lt;!-- end .section#one -->
+</pre>	
+			</blockquote>
+			<p><em>Anything you add to the HTML you need to style.</em></p>
+			<blockquote>
+				<pre>
+.newstuff {
+background-color: #F00;
+display: block;
+position: relative;
+height:100px;
+}</pre>	
+			</blockquote>			
+			<p>The height of the intro needs to be a fixed number, not auto. If you change it to auto, the page will jump when you scroll past the bottom of the intro.</p>	
+			<blockquote>
+				<pre>
+#intro {
+background: url(...);
+display: block;
+position: relative;
+height:520px;
+}</pre>	
+			</blockquote>
+				<p>In the file justapage.js, you can adjust the distance above a section that begins the highlight in the navigation. Just change the number for the buffer variable.</p>
+			<blockquote>
+				<pre>
+var buffer = 100;</pre>	
+			</blockquote>
+		</div><!-- end .section#two -->	
+						
+		<div class="section" id="three">
+			<h1 class="section_title">Warnings!</h1>
+			<p>JustaPage is not perfect, so here are a few caveats to using the template:</p>
+			<ul class="warnings">
+				<li class="warnings">JustaPage is just a template. It doesn't magically make your code work, look pretty or work in every browser. It simply holds your code in a neat package.</li>
+				<li class="warnings">JustaPage has not been tested on every browser. It has been successful is tests in Safari, Firefox, Opera, Chrome and IE 9 &amp; 10. In IE 6&ndash;8 the navigation doesn't affix to the top or highlight the relevant section, but at least it scrolls when you click a link.</li>
+				<li class="warnings">The site has one intro and three sections. Unless you want to update the javascript yourself you should not add or delete any sections. You can <a href="mailto:paul@molluzzo.com">email me</a> if you need help.</li>
+				<li class="warnings">The mobile version is a separate CSS file that basically rearranges the content in a single centered column. You should consider adding some conditional loading for large content (like Retina versions of photos).</li>
+			</ul>
+		</div>	<!-- end .section#three -->
+		
+		<div id="footer">
+			<ul id="toes">
+				<li class="toes"><a href="http://paul.molluzzo.com">by paul molluzzo</a></li>
+				<li class="toes"><a href="https://github.com/paulmolluzzo/JustaPage/zipball/master">Download Here</a></li>										
+			</ul>
+		</div> <!-- end .footer -->
+	</body>
+</html>
