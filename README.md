@@ -51,7 +51,7 @@ In the file justapage.js, you can adjust the distance above a section that begin
 var buffer = 100;
 ```
 
-Check out the [Demo Page](http://paulmolluzzo.github.com/justapage) to see JustaPage in action and see more info.
+Check out the [Demo Page](http://paulmolluzzo.github.com/JustaPage/demo) to see JustaPage in action and see more info.
 
 ## License
 
