@@ -17,11 +17,11 @@ Things to do and notice:
 This is a template. Dump your code in between the section you want it to appear. There are comments so you don't get lost in the code.
 
 ```html
-&lt;div class="section" id="one"> &lt;!-- begin section one -->
+<div class="section" id="one"> <!-- begin section one -->
 
-	&lt;div class="newstuff">
+	<>div class="newstuff">
 
-&lt;/div> &lt;!-- end .section#one -->
+</div> <!-- end .section#one -->
 ```
 
 *Anything you add to the HTML you need to style.*
